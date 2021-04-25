@@ -3,6 +3,7 @@ import 'package:gowee_demo/screens/home/component/hottest.dart';
 
 import '../../../size_config.dart';
 import 'home_header.dart';
+import 'list_journey.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenWidth(10)),
             Hottest(),
             SizedBox(height: getProportionateScreenWidth(30)),
-            PopularProducts(),
+            JourneyHomePage(),
             SizedBox(height: getProportionateScreenWidth(30)),
           ],
         ),

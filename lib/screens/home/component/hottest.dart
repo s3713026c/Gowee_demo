@@ -26,13 +26,13 @@ class Hottest extends StatelessWidget {
           child: Row(
             children: [
               HottestCard(
-                image: "assets/images/binh-minh-da-lat-dep-nap-long-1_kabt-1.jpg",
+                image: "assets/images/vungtau1.jpg",
                 category: "Vapor Storm",
                 numOfBrands: 18,
                 press: () {},
               ),
               HottestCard(
-                image: "assets/images/Image Banner 3.png",
+                image: "assets/images/vungtau1.jpg",
                 category: "Fashion",
                 numOfBrands: 24,
                 press: () {},

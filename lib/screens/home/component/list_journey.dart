@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:gowee_demo/components/journey_card.dart';
 
+import '../../../models/Journey.dart';
 import '../../../size_config.dart';
 
-class PopularProducts extends StatelessWidget {
+class JourneyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -20,7 +22,7 @@ class PopularProducts extends StatelessWidget {
                 demoJourneys.length,
                     (index) {
                   if (demoJourneys[index].isPopular)
-                    return JourneyCard(product: demoJourney[index]);
+                    return JourneyCard(journey: demoJourneys[index]);
 
                   return SizedBox
                       .shrink(); // here by default width and height is 0
