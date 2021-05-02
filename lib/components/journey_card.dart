@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:gowee_demo/detail/detail_journey.dart';
+import 'package:gowee_demo/screens/detail/detail_journey.dart';
+
 
 import '../constants.dart';
 import '../models/Journey.dart';

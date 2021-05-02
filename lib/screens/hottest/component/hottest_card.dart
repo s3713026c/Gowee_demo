@@ -1,50 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
-import 'section_title.dart';
-
-class Hottest extends StatelessWidget {
-  const Hottest({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding:
-          EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
-          child: SectionTitle(
-            title: "Hottest",
-            press: () {},
-          ),
-        ),
-        SizedBox(height: getProportionateScreenWidth(20)),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              HottestCard(
-                image: "assets/images/vungtau1.jpg",
-                category: "Vapor Storm",
-                numOfBrands: 18,
-                press: () {},
-              ),
-              HottestCard(
-                image: "assets/images/vungtau1.jpg",
-                category: "Fashion",
-                numOfBrands: 24,
-                press: () {},
-              ),
-              SizedBox(width: getProportionateScreenWidth(20)),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
 
 class HottestCard extends StatelessWidget {
   const HottestCard({
@@ -72,7 +28,7 @@ class HottestCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: Stack(
               children: [
-                Image.asset(
+                Image.network(
                   image,
                   fit: BoxFit.cover,
                 ),

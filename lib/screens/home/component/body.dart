@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gowee_demo/screens/home/component/hottest.dart';
+import 'package:gowee_demo/screens/hottest/hottest.dart';
 
 import '../../../size_config.dart';
 import 'home_header.dart';

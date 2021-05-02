@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gowee_demo/models/Journey.dart';
 
-import '../models/Journey.dart';
+
 
 class DetailsJourneyScreen extends StatelessWidget {
   static String routeName = "/details";
